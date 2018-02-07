@@ -100,6 +100,7 @@
     <ctl name="DEC4 MUX" value="ZERO" />
     <ctl name="SpkrMono VISENSE Switch" value="0" />
     <ctl name="ADC1_INP1 Switch" value="0" />
+
     <!--MAX98927 Smart PA-->
     <ctl name="DRE EN" value="1" />
     <ctl name="Left Channel Enable" value="0" />
