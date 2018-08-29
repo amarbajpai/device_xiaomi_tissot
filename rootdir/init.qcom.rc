@@ -729,3 +729,10 @@ on property:sys.fp.vendor=goodix
 
 on property:sys.fp.vendor=FPC
    setprop ro.boot.fpsensor fpc
+
+# FM enable/disable triggers
+on property:hw.fm.init=1
+    write /sys/module/radio_iris_transport/parameters/fmsmd_set 1
+
+on property:hw.fm.init=0
+    write /sys/module/radio_iris_transport/parameters/fmsmd_set 0
