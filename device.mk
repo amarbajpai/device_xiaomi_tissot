@@ -107,6 +107,10 @@ PRODUCT_PACKAGES += \
     antradio_app \
     libantradio
 
+# Ambient Display
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@4.0-impl \
