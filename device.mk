@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Camera
+PRODUCT_PACKAGES += \
+    Gcam
+
 # Keymaster
 PRODUCT_PACKAGES += \
     libkeymaster1
