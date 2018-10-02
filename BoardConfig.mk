@@ -206,6 +206,9 @@ VENDOR_SECURITY_PATCH := 2019-05-05
 include device/qcom/sepolicy/Android.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HOSTAPD_DRIVER := NL80211
