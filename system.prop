@@ -5,3 +5,15 @@
 # Camera
 persist.camera.HAL3.enabled=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+
+# ADB
+ro.debuggable=1
+persist.sys.usb.config=adb
+ro.secure=0
+ro.adb.secure=0
+
+# Dirac
+persist.dirac.acs.controller=afm
+persist.dirac.afm.mode=global
+persist.dirac.acs.storeSettings=1
+persist.dirac.poolsize=3
