@@ -200,9 +200,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
-# Glove mode
-PRODUCT_PACKAGES += \
-    DeviceSettings
+#Glove mode
+#PRODUCT_PACKAGES += \
+#    DeviceSettings
 
 # Google Lens
 PRODUCT_COPY_FILES += \
