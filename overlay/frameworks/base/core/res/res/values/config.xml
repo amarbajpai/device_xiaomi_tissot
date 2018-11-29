@@ -288,4 +288,7 @@
         <item>20</item>
         <item>30</item>
     </integer-array>
+
+    <!-- Whether the device has fingeprint sensor or not -->
+   <bool name="config_hasFingerprintSensor">true</bool>
 </resources>
