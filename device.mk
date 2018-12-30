@@ -107,9 +107,9 @@ PRODUCT_PACKAGES += \
     antradio_app \
     libantradio
 
-# Ambient Display
+# Device-specific Settings
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    XiaomiParts
 
 # Audio
 PRODUCT_PACKAGES += \
