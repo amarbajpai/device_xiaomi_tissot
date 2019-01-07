@@ -337,10 +337,14 @@ vendor/bin/hw/android.hardware.camera.provider@2.4-service
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
+vendor/lib/camera.device@3.4-impl.so
+vendor/lib/camera.device@3.4-external-impl
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
 vendor/lib64/camera.device@3.3-impl.so
+vendor/lib64/camera.device@3.4-impl.so
+vendor/lib64/camera.device@3.4-external-impl
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 
 # Camera isp

@@ -4,4 +4,6 @@
 
 # Camera
 persist.camera.HAL3.enabled=1
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+persist.camera.eis.enable=1
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+vendor.camera.aux.packagelist2=com.android.systemui
