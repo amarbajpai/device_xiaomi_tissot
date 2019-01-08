@@ -337,6 +337,9 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
+    #Start RILD
+    start ril-daemon
+
     #Create a folder for SRS to be able to create a usercfg file
     #mkdir /data/data/media 0770 media media
 
