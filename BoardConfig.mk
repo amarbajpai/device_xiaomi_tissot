@@ -221,7 +221,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 endif
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2018-12-05
+VENDOR_SECURITY_PATCH := 2019-01-05
 
 # SELinux
 include device/qcom/sepolicy/Android.mk
