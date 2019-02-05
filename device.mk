@@ -162,7 +162,7 @@ PRODUCT_PACKAGES += \
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
-	
+
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
