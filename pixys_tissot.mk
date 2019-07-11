@@ -25,6 +25,7 @@ $(call inherit-product, device/xiaomi/tissot/device.mk)
 $(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 PIXYS_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
+DEVICE_MAINTAINERS = "Amar Bajpai"
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
