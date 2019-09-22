@@ -30,7 +30,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 LINEAGE_ROOT="$MY_DIR"/../../..
 
-HELPER="$LINEAGE_ROOT"/vendor/lineage/build/tools/extract_utils.sh
+HELPER="$LINEAGE_ROOT"/vendor/blobscript/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -63,5 +63,12 @@ setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
+
+DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+if [ "$DEVICE" = "tissot" ]; then
+patchelf --remove-needed libunwind.so "$DEVICE_BLOB_ROOT"/lib64/hw/gf_fingerprint.default.so
+patchelf --replace-needed libsoftkeymaster.so libsoftkeymasterdevice.so "$DEVICE_BLOB_ROOT"/lib64/hw/gf_fingerprint.default.so
+fi
 
 "$MY_DIR"/setup-makefiles.sh
